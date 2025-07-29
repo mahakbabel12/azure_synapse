@@ -1,0 +1,34 @@
+{
+	"name": "DestinationDataset_rkt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "synapse003",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "userid",
+				"type": "varchar"
+			},
+			{
+				"name": "movieid",
+				"type": "varchar"
+			},
+			{
+				"name": "rating",
+				"type": "varchar"
+			},
+			{
+				"name": "timestamp",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "rating45"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

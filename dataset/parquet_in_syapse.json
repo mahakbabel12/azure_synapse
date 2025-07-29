@@ -1,0 +1,38 @@
+{
+	"name": "parquet_in_syapse",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "synapse003",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "userid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "movieid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "rating",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "timestamp",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ratings"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

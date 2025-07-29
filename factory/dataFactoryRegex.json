@@ -1,0 +1,9 @@
+{
+	"name": "dataFactoryRegex",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "badb3697-e096-4f14-b166-9b6df19d9883",
+		"tenantId": "480c206d-2c9b-41e2-b54c-d4f63db3a36d"
+	}
+}
